@@ -2,7 +2,7 @@
     font-size: 20x;
 }
 
-@media (min-width: 750px) {
+@media only screen and (min-width: 750px) {
     .first1, .second1, .third1 {
             font-size: 80px;
     }
