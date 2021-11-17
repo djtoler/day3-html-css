@@ -5,24 +5,46 @@ body {
 
 header {
     background-color: #55188b;
-    height: 50px
+    height: 100px
 }
 
 a {
     
     color: rgba(255,255,255,0.8);
     text-decoration: none;
-    font-weight: bold;
     padding: 15px;
+}
+
+.p{
+    float: right;
 }
 
 purpleNav {
     display: flex;
     justify-content: space-around;
+    justify-content: right;
 }
 
-.navigationLinks {
+.navigationLinks { 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigationLinks {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header {
+        height: 350px;
+        width: 250px;
+    }
+    .p{
+        position: absolute;
+    }
+    #contact {
+        margin-top: 50px;
+    }
+
 }
